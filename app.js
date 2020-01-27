@@ -1,4 +1,4 @@
-let lang = 'en';
+let lang = 'ru';
 let days = {
     ru : ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскрессенье'],
     en : ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
@@ -7,8 +7,9 @@ let days = {
 if( lang === 'ru' || lang === 'en')
     console.log(String(days[lang]));
 
-switch(true){
-    case lang === 'ru' || lang === 'en':
+switch(lang === 'ru' || lang === 'en'){
+    case lang === 'ru':
+    case lang === 'en':
         console.log(String(days[lang]));
         break;
     default:
